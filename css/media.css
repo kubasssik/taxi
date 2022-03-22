@@ -1,0 +1,468 @@
+/*
+@media (min-height: 880px) {
+
+    .main__items {
+        grid-template-columns: repeat(7, 100px);
+        grid-template-rows: repeat(6, 100px);
+    }
+
+    .item__side {
+        grid-column: 1/8;
+        grid-row: 5/7;
+    }
+
+    .header__ul {
+        grid-template-columns: repeat(6, 115px);
+        font-size: 23px;
+        padding-top: 25px;
+        column-gap: 10px;
+    } 
+}
+*/
+@media(max-width: 1060px ) {
+    .main__items {
+        grid-template-columns: repeat(7, 100px);
+        grid-template-rows: repeat(6, 100px);
+    }
+
+    .item__side {
+        grid-column: 1/8;
+        grid-row: 5/7;
+    }
+
+    .header__ul {
+        grid-template-columns: repeat(6, 115px);
+        font-size: 23px;
+    }
+}
+
+
+
+@media (max-width: 920px) {
+    .header__ul{
+       display: none;
+       
+      
+    }
+    /*общие блоки*/
+    .main__items {
+        grid-template-columns: repeat(5, 115px);
+        grid-template-rows: repeat(8, 100px);
+    }
+
+    .item__info-order {
+        grid-column: 2/4;
+        grid-row: 6/7;
+    }
+
+    .item__side {
+        grid-column: 2/6;
+        grid-row: 7/9;
+    }
+
+    .item__payment {
+        grid-column: 4/6;
+        grid-row: 6/7;
+    }
+
+
+
+    /*****************Социальные сети**************************/
+    .item__social {
+        grid-column: 1/2;
+        grid-row: 1/9;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img__whatsapp,
+    .img__viber,
+    .img__telegram,
+    .img__vk,
+    .img__tariffs,
+    .img__services,
+    .img__excursions,
+    .img__partners {
+        width: 75px;
+        height: 75px;
+        position: absolute;
+
+    }
+
+    /********************ФОРМА***************************/
+    .item__form {
+        grid-column: 2/6;
+        grid-row: 1/6;
+        grid-template-rows: 40px 35px 160px 100px 100px 20px 35px;
+        
+    }
+
+    .item__p-form {
+        font-size: 35px;
+    }
+
+    .previously,
+    .twenty,
+    .clear {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    /*****************Input**************************/
+    .item__input-style {
+        width: 230px;
+        height: 35px;
+        font-size: 20px;
+        padding: 0 3px;
+    }
+    .ol__one {
+        left: 8px;
+        top:40px;
+        width: 230px;
+        max-height: 80px;
+        font-size: 19px;
+      }
+      .ol__two{
+        left: 256px;
+        top:40px;
+        width: 230px;
+        max-height: 80px;
+        font-size: 19px;
+      }
+    /****************************РАДИО КНОПКИ ТАРИФЫ******************************/
+    .fake {
+        font-size: 22px; 
+    }
+
+  
+
+    .fake__checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .fake__checkbox::before {
+        width: 15px;
+        height: 15px;
+    }
+
+    .text__checkbox {
+        font-size: 20px;
+        padding-left: 5px;
+    }
+
+    /***************************Бургер меню******************************/
+    .header {
+        grid-template-columns: 1fr 65px;    
+    }
+    .menu__burger{
+        width: 97%;
+        height: 100%;
+        background-color: rgb(92, 92, 92);
+        right: 10px;
+       
+        
+    }
+    
+    .toggle{
+    grid-column: 2/3; 
+    position: relative;
+    top: 3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-column: 2/3;
+    transition: 0.2s;
+    
+}
+
+
+.toggle::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: black;
+    transition: 0.2s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 black;
+}
+
+.toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 wheat;
+}
+
+.toggle::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: black;
+    transition: 0.2s;
+    transform: translateY(10px);
+}
+
+.toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+    
+}
+
+}
+
+@media (max-width: 680px) {
+    .main__items {
+
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: repeat(8, 100px);
+
+    }
+
+    .item__form {
+
+        grid-column: 1/5;
+        grid-row: 1/6;
+
+    }
+
+    .item__info-order {
+        grid-column: 1/3;
+        grid-row: 6/7;
+    }
+
+    .item__side {
+        grid-column: 1/5;
+        grid-row: 7/9;
+    }
+
+    .item__payment {
+        grid-column: 3/5;
+        grid-row: 6/7;
+    }
+
+    .item__social {
+        display: none;
+
+    }
+ /*****************Input**************************/
+ .item__input-style {
+    width: 200px;
+    height: 35px;
+    font-size: 20px;
+    padding: 0 3px;
+}
+.ol__one {
+    left: 8px;
+    top:40px;
+    width: 200px;
+    max-height: 80px;
+    font-size: 19px;
+  }
+  .ol__two{
+    left: 226px;
+    top:40px;
+    width: 200px;
+    max-height: 80px;
+    font-size: 19px;
+  }
+    /***************************Бургер меню******************************/
+ 
+    .menu__burger{
+        width: 95%;
+        height: 100%;
+        background-color: rgb(92, 92, 92);
+        right: 10px;
+       
+        
+       
+        
+    }
+
+}
+
+
+@media (max-width: 480px) {
+    .main {}
+
+    .main__items {
+        grid-template-columns: repeat(1, 100px);
+        grid-auto-rows: 100px;
+
+
+    }
+
+    /*форма*/
+    .item__form {
+        grid-row: 1/10;
+        grid-template-rows: 40px 35px 400px 200px 200px 20px 35px;
+        row-gap: 5px;
+    }
+
+
+
+
+    .item__info-order {
+
+        grid-row: 10/12;
+        grid-column: 1/5;
+    }
+
+    .item__side {
+
+        grid-row: 12/14;
+    }
+
+    .item__payment {
+        grid-column: 1/5;
+        grid-row: 14/16;
+    }
+
+    .item__social {
+        display: none;
+    }
+
+
+/*********************Button*****************************/
+.previously{
+    padding: 0 5px;
+}
+
+    /*****************Input**************************/
+    .input__div {
+        grid-template-columns: 100%;
+
+    }
+
+
+
+    .item__input-style {
+        width: 335px;
+        height: 40px;
+        font-size: 30px;
+        padding: 0 5px;
+    }
+.ol__one {
+    left: 8px;
+    top:45px;
+    width: 336px;
+    max-height: 80px;
+    font-size: 24px;
+  }
+  .ol__two{
+    left: 8px;
+    top:94px;
+    width: 336px;
+    max-height: 80px;
+    font-size: 24px;
+  }
+
+    /*************************checbox МЕНЮ************************************/
+
+    .checkbox__div {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    /****************************РАДИО КНОПКИ ТАРИФЫ******************************/
+    .radio__div {
+        grid-template-columns: repeat(2, 1fr);
+      
+        
+    }
+
+  
+   
+
+    .img__whatsapp,
+    .img__viber,
+    .img__telegram,
+    .img__vk,
+    .img__tariffs,
+    .img__services,
+    .img__excursions,
+    .img__partners {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .clear {
+        width: 100px;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+    .item__input-style {
+        width: 265px;
+        height: 40px;
+        font-size: 24px;
+        padding: 0 5px;
+    }
+
+    .text__processing {
+        font-size: 12px;
+    }
+
+    .text__checkbox {
+
+        font-size: 18px;
+        padding-left: 2px;
+    }
+
+}
+
+.previously {
+    grid-column: 1/2;
+}
+
+.twenty {
+    grid-column: 2/3;
+}
+.clear {}
+
+@media (max-width: 320px) {
+    body {
+        padding: 1px;
+    }
+
+      /***************************Бургер меню******************************/
+ 
+      .menu__burger{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(92, 92, 92);
+        right: 0px;
+       
+        
+    }
+        
+
+    .header {
+        display: grid;
+    }
+
+    .item__input-style {
+        width: 250px;
+        height: 40px;
+        
+        padding-left: 10px;   
+    }
+    .text__processing {
+        font-size: 10px;
+    }
+
+    .text__checkbox {
+
+        font-size: 18px;
+        padding-left: 2px;
+    }
+
+}
